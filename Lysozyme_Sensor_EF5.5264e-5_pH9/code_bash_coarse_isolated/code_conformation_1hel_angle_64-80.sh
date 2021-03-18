@@ -2,9 +2,9 @@
 
 #SBATCH -p gpuk
 #SBATCH --gres=gpu:1
-#SBATCH -J 1hel_64-80_EF5.5264e-5
-#SBATCH -o 1hel_64-80_EF5.5264e-5-%j.out
-#SBATCH -e 1hel_64-80_EF5.5264e-5-%j.err
+#SBATCH -J 1hel_64-80_pH9_EF5.5264e-5
+#SBATCH -o 1hel_64-80_pH9_EF5.5264e-5-%j.out
+#SBATCH -e 1hel_64-80_pH9_EF5.5264e-5-%j.err
 #SBATCH --mem=2G
 #SBATCH --time=55:00:00
 #SBATCH --mail-user=sergio.urzua.13@sansano.usm.cl
@@ -15,7 +15,7 @@ use anaconda3
 
 export PYTHONPATH=/user/s/surzua/PyCuda/pycuda/lib/python
 
-cd ../../Lysozyme_Sensor_Test_pH/Lysozyme_Sensor_EF5.5264e-5_pH9/
+cd ../../Lysozyme_Sensor_EF5.5264e-5_pH9/
 ###############################################################################################################################################################
 echo "Simulación que contempla las siguientes Orientaciones:"
 echo "Tilt begin: 64° - Tilt_end: 80° - Ntilt: 5 -- Rot begin: 0° - Rot end: 360° - Nrot: 36"
